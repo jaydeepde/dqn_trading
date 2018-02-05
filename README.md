@@ -11,3 +11,12 @@ Learning rate and loss will be stored in learning.csv file
 After each iteration the network parameters will be stored
 ## How to analyze results?
 Open and run the ipython notebook analyse_results.ipynb
+
+## Future work
+1. Implement for more applications for time series predictions.
+2. Implement new architechtures like Double Q Learning, Dueling network etc.
+3. Implement new ideas.
+
+## Some starting materials 
+1. The slides attached RL_presentation.pptx
+2. [Demystifying Deep Q Learning](https://ai.intel.com/demystifying-deep-reinforcement-learning/)
