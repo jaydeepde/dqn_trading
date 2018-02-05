@@ -3,9 +3,7 @@
 Execute a training run of deep-Q-Leaning with parameters that
 are consistent with:
 
-Playing Atari with Deep Reinforcement Learning
-NIPS Deep Learning Workshop 2013
-
+Trading with Deep Reinforcement Learning
 """
 
 import trading_launcher_1d
@@ -21,12 +19,6 @@ class Defaults:
     STEPS_PER_EPOCH = 500000
     EPOCHS = 100
     STEPS_PER_TEST = 500000
-
-    # ----------------------
-    # ALE Parameters
-    # ----------------------
-    # BASE_ROM_PATH = "../roms/"
-    # ROM = 'breakout.bin'
     FRAME_SKIP = 1
     REPEAT_ACTION_PROBABILITY = 0
 

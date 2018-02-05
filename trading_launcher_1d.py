@@ -7,7 +7,6 @@ run_nips.py or run_nature.py.
 import os
 import argparse
 import logging
-#import ale_python_interface
 import cPickle
 import numpy as np
 import theano
@@ -176,38 +175,6 @@ def launch(args, defaults, description):
          rng = np.random.RandomState(123456)
     else:
          rng = np.random.RandomState()
-
-#==============================================================================
-#     if parameters.rom.endswith('.bin'):
-#         rom = parameters.rom
-#     else:
-#         rom = "%s.bin" % parameters.rom
-#     full_rom_path = os.path.join(defaults.BASE_ROM_PATH, rom)
-#
-#     if parameters.deterministic:
-#         rng = np.random.RandomState(123456)
-#     else:
-#         rng = np.random.RandomState()
-#
-#     if parameters.cudnn_deterministic:
-#         theano.config.dnn.conv.algo_bwd = 'deterministic'
-#
-#     ale = ale_python_interface.ALEInterface()
-#     ale.setInt('random_seed', rng.randint(1000))
-#
-#     if parameters.display_screen:
-#         import sys
-#         if sys.platform == 'darwin':
-#             import pygame
-#             pygame.init()
-#             ale.setBool('sound', False) # Sound doesn't work on OSX
-#
-#     ale.setBool('display_screen', parameters.display_screen)
-#     ale.setFloat('repeat_action_probability',
-#                  parameters.repeat_action_probability)
-#
-#     ale.loadROM(full_rom_path)
-#==============================================================================
 
     num_actions = 25  # (12hr buy, do_nothing, 12hr sell)
 
