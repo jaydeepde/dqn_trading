@@ -6,9 +6,9 @@ This is demo to use Deep Q Learning for Systamic Trading. In this demo the data 
 python run_trading_1d.py
 ```
 Data is inside data/*
-Results will be saved in Trading_Experiment_*/results.csv
-Learning rate and loss will be stored in learning.csv file
-After each iteration the network parameters will be stored
+Results will be saved in Trading_Experiment_*/results.csv file. 
+Learning rate and loss will be stored in Trading_Experiment_*/learning.csv file.
+After each iteration the network parameters will be stored.
 ## How to analyze results?
 Open and run the ipython notebook analyse_results.ipynb
 
